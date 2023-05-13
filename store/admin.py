@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import Address, Category, Product, Cart, Order
 
+
 # Register your models here.
 class AddressAdmin(admin.ModelAdmin):
     list_display = ('user', 'locality', 'city', 'state')
@@ -15,7 +16,7 @@ class CategoryAdmin(admin.ModelAdmin):
     list_filter = ('is_active', 'is_featured')
     list_per_page = 10
     search_fields = ('title', 'description')
-    prepopulated_fields = {"slug": ("title", )}
+    prepopulated_fields = {"slug": ("title",)}
 
 
 class ProductAdmin(admin.ModelAdmin):
@@ -24,7 +25,8 @@ class ProductAdmin(admin.ModelAdmin):
     list_filter = ('category', 'is_active', 'is_featured')
     list_per_page = 10
     search_fields = ('title', 'category', 'short_description')
-    prepopulated_fields = {"slug": ("title", )}
+    prepopulated_fields = {"slug": ("title",)}
+
 
 class CartAdmin(admin.ModelAdmin):
     list_display = ('user', 'product', 'quantity', 'created_at')

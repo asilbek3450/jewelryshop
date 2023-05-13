@@ -3,7 +3,7 @@
 <!-- navbar-->
       <header class="header bg-white">
         <div class="container px-0 px-lg-3">
-          <nav class="navbar navbar-expand-lg navbar-light py-3 px-lg-0"><a class="navbar-brand" href="{% url 'store:home' %}"><span class="font-weight-bold text-uppercase text-dark">Gold</span></a>
+          <nav class="navbar navbar-expand-lg navbar-light py-3 px-lg-0"><a class="navbar-brand" href="{% url 'store:home' %}"><span class="font-weight-bold text-uppercase text-dark">Jewellery </span><img  width="30px" height="30px" src="{% static 'img/main_logo.png' %}"></a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
@@ -19,13 +19,13 @@
                     {% endif %}
                     <hr>
                     <a class="dropdown-item border-0 transition-link" href="{% url 'store:all-categories' %}">All Categories</a>
-                    
+                  </div>
                 </li>
                 <li class="nav-item">
-                  <!-- Link--><a class="nav-link" href="{% url 'store:home' %}">Blog</a>
+                  <!-- Link--><a class="nav-link" target="_blank" href="https://t.me/asilbekmirolimov">Blog</a>
                 </li>
                 <li class="nav-item">
-                  <!-- Link--><a class="nav-link" href="{% url 'store:home' %}">Contact</a>
+                  <!-- Link--><a class="nav-link" target="_blank" href="https://mirolimov.uz/">Contact</a>
                 </li>
               </ul>
               <ul class="navbar-nav ml-auto"> 
@@ -45,7 +45,7 @@
 
                     <hr>
                     <a class="dropdown-item border-0 transition-link" href="{% url 'store:logout' %}">Log Out</a>
-                    
+                  </div>
                 </li>
                 {% else %}
                   <li class="nav-item"><a class="nav-link" href="{% url 'store:login' %}">Login</a></li>
