@@ -1,4 +1,4 @@
-#!/run/media/asilbek/MyFiles/projects/jewelryshop/venv/bin/python3
+#!/media/asilbek/MyFiles/projects/jewelryshop/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
